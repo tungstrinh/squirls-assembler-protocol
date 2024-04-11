@@ -1,0 +1,28 @@
+site_name: DES Assembler App
+theme:
+  name: material
+
+  language: en
+  palette:
+  - scheme: default
+    toggle:
+      icon: material/toggle-switch-off-outline
+      name: Switch to dark mode
+    primary: teal
+    accent: purple
+  - scheme: slate
+    toggle:
+      icon: material/toggle-switch
+      name: Switch to light mode
+    primary: teal
+    accent: lime
+
+markdown_extensions: 
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences  
+  - footnotes  
+  - pymdownx.highlight:
+      anchor_linenums: true
