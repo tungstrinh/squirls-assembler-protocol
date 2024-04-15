@@ -6,6 +6,9 @@ authors:
 
 # DES Assembler protocol
 
+
+> v 1.0.0
+
 In this page, we will describe the standard workflow to assemble a bacterial genome taking in illumina paired-end reads in `fastq` format.
 
 ## 1. Setting up ##
@@ -63,7 +66,7 @@ Open the designated input folder by clicking on the folder icon ![folder icon](.
 !!! important
     You can change the input folder clicking on the settings icon ![settings icon](./img/settings_icon.png){width="4%"}, and changing the directory in the `input folder` field. Finally, click on **Save**.
     
-    ![Open App](./img/open_settings.png){width="60%"}    
+    ![Open App](./img/open_settings_input.png){width="60%"}    
 
 Select the `fastq` files from the genomes you would like to assemble and move them to that designated folder. The **DES Assembler app** will detect the files in the input directory and start the assembly process.
 
@@ -83,7 +86,7 @@ Each genome will be assigned one of the followwing status:
 !!! note
     You can modify the maximum number of concurrent jobs the app can run by clicking on the settings icon ![settings icon](./img/settings_icon.png){width="4%"} and changing the number in the `Number of concurrent jobs` field. Finally, click on **Save**.
 
-    ![Open App](./img/open_settings.png){width="60%"}  
+    ![Open App](./img/open_settings_concurrent.png){width="60%"}  
 
 * `RUNNING` : The assembly process of the genomes with this status is currently ongoing and will move to the `FINISHED` or `FAILED` status.
 * `FAILED` : There has been an unexpected error, and the process has not produced an assembly.
@@ -99,7 +102,7 @@ Once the assembly process has successfully concluded with the `FINISHED` status,
 !!! important
     You can change the output folder clicking on the settings icon ![settings icon](./img/settings_icon.png){width="4%"}, and changing the directory in the `output folder` field. Finally, click on **Save**.
     
-    ![Open App](./img/open_settings.png){width="60%"}   
+    ![Open App](./img/open_settings_output.png){width="60%"}   
 
 ## 5. `FAILED` Assembly
 
