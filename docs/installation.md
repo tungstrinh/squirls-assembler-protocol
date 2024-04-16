@@ -19,4 +19,4 @@ authors:
 - Create a folder to place all the files provided by DES. Eg. assembler 
 - Unzip the assembler executable file in the assembler folder
 - Double click the load_image.batch file, this will open up a command line window with the message Loading docker image…. Wait for the image to load and do not close the window.
-- Once the image is loaded, navigate to the assembler app executable. And double click on it.
+- Once the image is loaded, navigate to the assembler app executable. And double click on it. This should start the assembler app.
