@@ -10,13 +10,22 @@ authors:
 ## 1. Prerequisites ##
 
 * The following files are provided by DES.
-  - Assembler app executable.
+  - Assembler app compressed file `assembler-win32-x64.zip`.
   - Docker image `assembly.tar.gz` file
-  - Batch script `load_image.batch` to load the docker image
 * Docker engine for windows. E.g: https://docs.docker.com/desktop/install/windows-install/
 
 ## 2. Installation ##
 - Create a folder to place all the files provided by DES. E.g. `assembler` 
-- Unzip the assembler executable file in the `assembler` folder
-- Double click the `load_image.batch` file, this will open up a command line window with the message `Loading docker image…`. Wait for the image to load and do not close the commandline window.
-- Once the image is loaded, navigate to the assembler app executable and double click on it. This should start the assembler app.
+- Unzip the assembler executable `assembler-win32-x64.zip` file in the `assembler` folder
+- Start the Docker Desktop application.
+- Double Click the executable file `assembler.exe`
+ 
+![assembler.exe](./img/assembler_exe.png)
+
+- You will be prompted to `Load Image`. Click on it and choose the assembly.tar.gz provided by DES.
+
+![Load Image](./img/load_image.png)
+
+- A Loading modal will pop up. It takes around 5 minutes to load the image once the image is loaded the app will start automatically.
+  
+![Loading](./img/loading.png)
