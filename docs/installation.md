@@ -24,8 +24,9 @@ authors:
 
 - You will be prompted to `Load Image`. Click on it and choose the assembly.tar.gz provided by DES.
 
-![Load Image](./img/load_image.png)
+![Load Image](./img/load_image.png){width="40%"}
 
-- A Loading modal will pop up. It takes around 5 minutes to load the image once the image is loaded the app will start automatically.
+- A Loading modal will pop up. It takes around 5 minutes to load the image. Once the image is loaded the app will start automatically.
   
-![Loading](./img/loading.png)
+![Loading](./img/loading.png){width="40%"}
+![App](./img/open_app.png){width="60%"}
