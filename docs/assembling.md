@@ -57,7 +57,7 @@ This will bring the **DES Assembler app** app to the front, and it should look l
 !!! warning 
     Your paired `fastq` file should end in one of the following formats:
 
-    * `{ID}_L001_R1_001.fastq.gz` and `{ID}_L001_R1_002.fastq.gz`
+    * `{ID}_L001_R1_001.fastq.gz` and `{ID}_L001_R2_001.fastq.gz`
 
 
 Open the designated input folder by clicking on the folder icon ![folder icon](./img/folder_icon.png){width="4%"} in the **DES Assembler app**. This will open the designated input folder. 
