@@ -20,7 +20,7 @@ authors:
 - Start the Docker Desktop application.
 - Double Click the executable file `assembler.exe`
  
-![assembler.exe](./img/assembler_exe.png)
+![assembler.exe](./img/assembler_exe.png){width="60%"}
 
 - You will be prompted to `Load Image`. Click on it and choose the assembly.tar.gz provided by DES.
 
