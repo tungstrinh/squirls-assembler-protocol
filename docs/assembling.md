@@ -9,7 +9,7 @@ authors:
 
 > v 1.0.0
 
-In this page, we will describe the standard workflow to assemble a bacterial genome taking in illumina paired-end reads in `fastq` format.
+In this page, we will describe the standard workflow to assembling a bacterial genome taking in illumina paired-end reads in `fastq` format.
 
 ## 1. Setting up ##
 
@@ -18,15 +18,15 @@ To run the **DES Assembler app**, your computer requires:
 * Docker Desktop installed on your computer.
 * The **DES Assembler app** installed on your computer.
 
-### Running Docker Desktop ###
+### Starting Docker desktop ###
 
 If Docker Desktop is currently active, you'll notice the Docker logo icon ![docker logo](./img/docker_icon.svg){width="4%"} displayed in your taskbar.
 
 ![Docker in taskbar](./img/docker_in_taskbar.png)
 
-If you suspect that Docker Desktop isn't running, simply double-click on the Docker icon ![docker logo](./img/docker_icon.svg){width="4%"} on ypur desktop. This action will initiate and activate Docker in the background. 
+If you suspect that Docker Desktop isn't running, simply double-click on the Docker icon ![docker logo](./img/docker_icon.svg){width="4%"} on your desktop. This action will initiate and activate Docker in the background. 
 
-### Running the assembler app ###
+### Starting the DES Assembler app ###
 
 If the **DES Assembler app** is already active, you'll notice its icon ![des logo](./img/des_icon.svg){width="4%"} displayed in your desktop taskbar.
 
@@ -38,13 +38,13 @@ or in your system tray.
 
 If you suspect that the **DES Assembler app** isn't running, simply double-click on the **DES Assembler app** icon ![Existing df](./img/des_icon.svg){width="4%"} on your desktop. This will launch the **DES Assembler app**.
 
-## 2. Selecting Files for Assembly ##
+## 2. Selecting files for assembly ##
 
-Your computer is now ready to start assembling genomes. This step requires two paired `fastq` files from an illumina sequencing experiment per genome. When you move these two files to the designated folder, the **DES Assembler app** will detect them and start the assembly process. Once the assembly process is finalized, you will have access to the assembled data in `fasta` format, along with its corresponding quality metrics file.
+Your computer is now ready to start assembling genomes. This step requires a pair of `fastq` files from an illumina sequencing experiment per genome. When you move these two files to the designated folder, the **DES Assembler app** will detect them and start the assembly process. Once the assembly process is finalized, you will have access to the assembled data in `fasta` format, along with its corresponding quality metrics file.
 
-### Open the **DES Assembler app** ###
+### Open the DES Assembler app ###
 
-Click on the **DES Assembler app** icon ![docker logo](./img/des_icon.svg){width="4%"} in your taskbar.
+Click on the DES Assembler app icon ![docker logo](./img/des_icon.svg){width="4%"} in your taskbar.
 
 ![App in taskbar](./img/app_in_taskbar.png)
 
@@ -74,7 +74,7 @@ Select the `fastq` files from the genomes you would like to assemble and move th
 
 The **DES Assembler app** will identify any new files within the input directory. These files will appear in the app labeled with the name preceding the `_` character. For instance, if your input files are named `bacteria_1.fastq.gz` and `bacteria_2.fastq.gz`, then the app will display the input genomic data as **`bacteria`**.
 
-Each genome will be assigned one of the followwing status:
+Each genome will be assigned one of the following status:
 
 * **`UNPAIRED`** : The app has detected only one of the two paired `fastq` files
 
@@ -97,10 +97,10 @@ Each genome will be assigned one of the followwing status:
 Once the assembly process has successfully concluded with the `FINISHED` status, you can access the assembly in `fasta` format and its accompanying quality metrics file by clicking on the corresponding label in the **DES assembly app**. This will open a folder labelled with the same name as the job in the app. This folder will contain two files:
 
 * **`sample.fasta`** : the resulting assembly in `fasta` format
-* **`stats`** : the quality metrics collected through the assembly process in `json` format.
+* **`stats`** : the quality metrics collected through the assembly process in `CSV` format.
 
 !!! important
-    You can change the output folder clicking on the settings icon ![settings icon](./img/settings_icon.png){width="4%"}, and changing the directory in the `output folder` field. Finally, click on **Save**.
+    You can change the output folder by clicking on the settings icon ![settings icon](./img/settings_icon.png){width="4%"}, and changing the directory in the `output folder` setting using the select button. Finally, click on **Save**.
     
     ![Open App](./img/open_settings_output.png){width="60%"}   
 
@@ -118,7 +118,9 @@ These logs will contain important information regarding the assembly workflow of
 
 ## 6. Clear `FINISHED` Job Status
 
-Jobs that are in `FINISHED` status can be cleared from the list. This does not remove the reads from the input folder nor does it remove the output of the job. It simply clears up the assembly job from the list for better visibility. To Clear a job
+Jobs that are in `FINISHED` status can be cleared from the list. This does not remove the reads from the input folder nor does it remove the output of the job. It simply clears up the assembly job from the list for better visibility. 
+
+To clear a job
 
 - Click on the `FINISHED` tab on the top, this will bring up a list of assembly jobs that have finished successfully. 
 
@@ -135,16 +137,15 @@ This will clear the assembly job from the list.
 
 ## 7. Generating Batch report
 
-A Batch report can be generated by selecting a batch of assembly jobs. This will create a csv file with the rows corresponding to the row values from each assembly stats.csv file. To create a batch report,
+A batch report can be generated by selecting a batch of assembly jobs. This will create a csv file with the rows corresponding to the row values from each assembly `stats.csv` file. To create a batch report,
 
 - Click on the `FINISHED` tab on the top, this will bring up a list of assembly jobs that have finished successfully. 
 - Select the assembly jobs to include in the batch report.
 - Click on the Report icon ![Report](./img/report.png){width="4%"}
 
-## 8. Monitoring Progress of assembly job.
+## 8.Monitoring assembly job progress.
 
 To monitor the progress of an assembly job simply click on the job, this will bring up a modal with a table containing the assembly steps.
-There are four columns in the table, `step`, `startTime`, `endTime`, and `duration`.
+There are three columns in the table, `step`, `startTime`, and `duration`.
 
-![Assembly Steps](./img/assembly_steps1.png){width="60%"}
-![Assembly Steps2](./img/assembly_steps2.png){width="60%"}
+![Assembly Steps](./img/assembly_steps.png){width="60%"}
