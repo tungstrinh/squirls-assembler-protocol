@@ -145,8 +145,10 @@ To create a batch report,
 - Select the assembly jobs to include in the batch report.
 - Click on the Report icon ![Report](./img/report.png){width="4%"}
 
-This will create a batch report of the selected job. The reports are located in the `report` folder in your output directory. Clicking the Report icon will open the report folder where youc an see the generated report.
+This will create a batch report of the selected job. The reports are located in the `report` folder in your output directory. Clicking the Report icon will open the report folder where you can see the generated report.
+
 ![Report Folder](./img/report_folder.png){width="60%"}
+
 They are dynamically named based on the current datetime.
 
 ## 8.Monitoring assembly job progress.
