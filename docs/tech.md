@@ -2,6 +2,7 @@
 title: Behind the scenes
 authors:
     - Julio Diaz Caballero
+    - Tung Trinh
 ---
 
 # Assembly pipeline
@@ -38,4 +39,3 @@ The workflow consists of the following steps
   - [MultiQC](https://multiqc.info/) Aggregate results from bioinformatics analyses across many samples into a single report
   - [KAT](https://github.com/TGAC/KAT) The K-mer Analysis Toolkit (KAT) contains a number of tools that analyse and compare K-mer spectra
   - [BactInspector](https://gitlab.com/antunderwood/bactinspector) Software using an updated refseq mash database to predict species
-
