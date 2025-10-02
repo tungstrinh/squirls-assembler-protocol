@@ -1,10 +1,11 @@
 ---
-title: Install DES Assembler App
+title: Install SQUIRLS Assembler App
 authors:
     - Pranit Shinde
+    - Tung Trinh
 ---
 
-# Install DES Assembler App on Windows
+# Install SQUIRLS Assembler App on Windows
 
 
 ## 1. Prerequisites ##
