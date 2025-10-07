@@ -26,7 +26,7 @@ If Docker Desktop is currently active, you'll notice the Docker logo icon ![dock
 
 If you suspect that Docker Desktop isn't running, simply double-click on the Docker icon ![docker logo](./img/docker_icon.svg){width="4%"} on your desktop. This action will initiate and activate Docker in the background. 
 
-### Starting the SEQUIRLS app ###
+### Starting the SQUIRLS app ###
 
 If the **SQUIRLS app** is already active, you'll notice its icon ![des logo](./img/des_icon.svg){width="4%"} displayed in your desktop taskbar.
 
@@ -120,7 +120,7 @@ Once the assembly process has successfully concluded with the `FINISHED` status,
 
 ## 5. `FAILED` Assembly
 
-If your genome displays the `FAILED` status, then the assembly did not complete as expected. Clicking on the corresponding label in the **DES assembly app** will show the log of the assembly process.
+If your genome displays the `FAILED` status, then the assembly did not complete as expected. Clicking on the corresponding label in the **SQURILS assembly app** will show the log of the assembly process.
 
 ![Open Log](./img/open_log.png){width="60%"}
 
