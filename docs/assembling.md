@@ -91,7 +91,7 @@ sample_id,short_reads1,short_reads2,long_reads,genome_size
 ```
 
 Here an example of a sample sheet for long read only sequences.
-![Open App](./img/samplesheet.jpeg){width="100%"}
+![Open App](./img/samplesheet.png){width="100%"}
 
 
 * **`PENDING`** : The app is currently running the maximum number of concurrent jobs it is allow to run. An entry with a `PENDING` status is in the queue and will start as `RUNNING` jobs move to the `FINISHED` or `FAILED` status.
